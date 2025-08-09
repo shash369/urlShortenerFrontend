@@ -10,8 +10,8 @@ function CopyButton({ textToCopy }) {
   return (
     <button
       onClick={copyToClipboard}
-      className="items-center text-center px-3 ml-2 border border-black rounded-xl bg-blue-400 text-white hover:bg-amber-400 transition-all duration-300 ease-in-out cursor-pointer"
-    >
+      className="px-5 py-2 ml-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300
+        cursor-pointer">
       Copy
     </button>
   );
@@ -22,7 +22,7 @@ export default function ShortUrlDisplay({ shortUrl }) {
 
   return (
     <div style={{ marginTop: "20px" }}>
-      <p>Shortened URL:</p>
+      <h1 className="text-xl font-bold">Shortened URL:</h1>
       <a href={shortUrl} target="_blank" rel="noopener noreferrer">
         {shortUrl}
       </a>
